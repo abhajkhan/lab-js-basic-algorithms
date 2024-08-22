@@ -39,3 +39,20 @@ else if ( hacker2 > hacker1)
 else {
     console.log("What?! You both have the same name?")
 }
+
+//Bonus Task 1
+
+const aString = "Phasellus mattis pretium efficitur. Nam eget viverra orci, non auctor libero. Donec finibus velit non nulla imperdiet tristique. Fusce fringilla dignissim leo, nec egestas enim. Mauris mauris nunc, molestie ac porttitor in, tristique vel est. Mauris et nibh egestas, tempor ante nec, suscipit lacus. Nam sed cursus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis turpis ipsum, sagittis nec ligula quis, venenatis dictum mi. Cras imperdiet lobortis nunc. Nunc arcu turpis, congue eu lacinia sit amet, accumsan vitae ante. \nSed ac quam tempus, volutpat massa a, scelerisque ipsum. Vivamus et arcu dapibus, ultricies neque sed, hendrerit lorem. Quisque fermentum ex magna, non maximus quam pulvinar eu. Mauris tempus metus vel diam lobortis malesuada. Integer ac libero vel sapien facilisis ultrices. Mauris auctor gravida viverra. Morbi non convallis ex. Integer auctor vel metus ac tincidunt. In ullamcorper mi sit amet erat aliquam, vel feugiat sem pretium. Praesent interdum, mi a tincidunt porta, turpis risus pellentesque enim, at interdum augue ex vel velit. Morbi et velit ex. Donec efficitur blandit aliquet. Aliquam vitae enim scelerisque massa dapibus ullamcorper. Nullam non diam quis quam dapibus varius id sed nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. \nSed sit amet metus placerat, porta dui ac, imperdiet velit. Proin vestibulum eros sed elit venenatis, eget dictum arcu ornare. Sed feugiat mauris eu tellus varius sodales. Vestibulum porta erat elit, nec pretium libero ultricies sed. Nulla risus nisi, vehicula et pulvinar eu, hendrerit eu tellus. Nullam at metus in orci imperdiet tincidunt non sit amet dolor. Nam nisl ex, pharetra sit amet condimentum in, consequat pretium felis. Vestibulum non ligula lorem. Ut blandit id nunc vitae pulvinar. Morbi ullamcorper arcu at sapien maximus sagittis. Vivamus consequat consequat bibendum. Ut nisi augue, faucibus eu eros vitae, porta lobortis ipsum. Donec dictum dictum nulla vitae feugiat. Morbi cursus finibus dui quis sollicitudin. Nunc ut justo at elit congue varius ac eu nisi."
+const words = aString.split(" ");
+console.log(`There is ${words.length} no.of words in the paragraph`);
+
+let ind = 0;
+let count = 0;
+while (ind != -1){
+    ind = aString.indexOf("et",ind);
+    if (ind !==  -1){
+        count += 1;
+        ind += 2;
+    }
+}
+console.log(`Number of times 'et' appears= ${count}`);
