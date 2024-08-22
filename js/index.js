@@ -56,3 +56,19 @@ while (ind != -1){
     }
 }
 console.log(`Number of times 'et' appears= ${count}`);
+
+//Bonus Task 2
+
+let phraseToCheck = "malayalam";
+let f = 1;
+const len = phraseToCheck.length;
+console.log(`String = ${phraseToCheck}`);
+for (let i=0; i<=len/2; i++){
+    if (phraseToCheck[i]!==phraseToCheck[len-1-i]){
+        console.log("The string is not palindrome");
+        f = 0;
+        break;
+    }
+}
+if (f == 1)
+    console.log("The string is palindrome.");
