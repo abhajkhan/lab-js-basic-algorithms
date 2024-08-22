@@ -18,3 +18,24 @@ else {
 }
 
 // Iteration 3: Loops
+const uCaseDriver = hacker1.toUpperCase();
+let res = "";
+for(let i=0; i < uCaseDriver.length; i++){
+    res += uCaseDriver[i]+" ";
+}
+console.log(res.trim());
+
+let res2 = "";
+for (let j = navigatorLength-1; j >= 0; j--){
+    res2 += hacker2[j];
+}
+console.log(res2);
+
+// Lexicographic order
+if ( hacker1 > hacker2)
+    console.log('The driver\'s name goes first');
+else if ( hacker2 > hacker1)
+    console.log("Yo, the navigator goes first definitely.");
+else {
+    console.log("What?! You both have the same name?")
+}
